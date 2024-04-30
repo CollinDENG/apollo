@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package apollo.control;
+
+message LatBaseStanleyControllerConf{
+  optional double ts = 1;  // sample time (dt) 0.01 now, configurable
+  optional int32 cutoff_freq = 2;              // cutoff frequency
+  optional double max_lateral_acceleration = 3;  // limit aggressive steering
+  optional double lock_steer_speed = 4 [default = 0.081];
+  optional bool enable_maximum_steer_rate_limit = 5 [default = false];
+}
