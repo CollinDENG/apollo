@@ -4,5 +4,5 @@ controller {
 }
 controller {
   name: "LON_CONTROLLER"
-  type: "LonController"
+  type: "MPCController"
 }

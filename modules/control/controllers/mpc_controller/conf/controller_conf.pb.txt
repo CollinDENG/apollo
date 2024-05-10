@@ -6,13 +6,8 @@ mass_fr: 45
 mass_rl: 57
 mass_rr: 57
 eps: 0.01
-matrix_q: 40.0
-matrix_q: 0.0
-matrix_q: 30.0
-matrix_q: 0.0
 matrix_q: 70.0
 matrix_q: 10.0
-matrix_r: 3.25
 matrix_r: 1.0
 cutoff_freq: 10
 mean_filter_window_size: 10

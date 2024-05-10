@@ -109,7 +109,7 @@ class MPCController : public ControlTask {
 
   void UpdateMatrix(SimpleMPCDebug *debug);
 
-  void FeedforwardUpdate(SimpleMPCDebug *debug);
+//   void FeedforwardUpdate(SimpleMPCDebug *debug);
 
   void ComputeLateralErrors(const double x, const double y, const double theta,
                             const double linear_v, const double angular_v,
@@ -184,9 +184,9 @@ class MPCController : public ControlTask {
   // number of states, includes
   // lateral error, lateral error rate, heading error, heading error rate,
   // station error, velocity error,
-  const int basic_state_size_ = 6;
+  const int basic_state_size_ = 2;
 
-  const int controls_ = 2;
+  const int controls_ = 1;
 
   const int horizon_ = 10;
   // vehicle state matrix
